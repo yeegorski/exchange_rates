@@ -12,7 +12,7 @@ from airflow.providers.http.sensors.http import HttpSensor
 dag_id = "exchange_rates_extract"
 http_conn_id = "http_nbp"
 currencies = ["eur", "usd"]
-file_path = "/home/yegor/projects/exchange_rates/{{ macros.ds_format(ds, '%Y-%m-%d', '%Y') }}/"
+file_path = "/home/user/exchange_rates/{{ macros.ds_format(ds, '%Y-%m-%d', '%Y') }}/"
 
 
 def _get_endpoint(currency):
