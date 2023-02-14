@@ -20,7 +20,7 @@ dag_id = "exchange_rates_validate"
 currencies = ["eur", "usd"]
 project_directory = "/home/user/exchange_rates/"
 year = "{{ macros.ds_format(ds, '%Y-%m-%d', '%Y') }}"
-bank_holidays_file_path = f"{project_directory}bank_holidays_poland_{year}.csv"
+bank_holidays_file_path = f"{project_directory}bank_holidays/bank_holidays_poland_{year}.csv"
 sensor_tasks = []
 
 
