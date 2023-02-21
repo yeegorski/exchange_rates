@@ -119,7 +119,7 @@ sense_holidays_file = FileSensor(
 )
 
 validate_data = BranchPythonOperator(
-    task_id=f"validate_data",
+    task_id="validate_data",
     python_callable=_validate_data,
     op_kwargs={
         "project_directory": project_directory,
