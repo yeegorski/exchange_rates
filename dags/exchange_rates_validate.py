@@ -143,7 +143,6 @@ send_email = EmailOperator(
     subject=f"Missing exchange rates data {year}",
     to="first.last@example.com",
     html_content="Please make sure no exchange rate data is missing.",
-    trigger_rule="none_failed_min_one_success",
     dag=dag,
 )
 
